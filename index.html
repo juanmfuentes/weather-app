@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app | Juan Fuentes</title> 
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- Import Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header-container regular-txt">
+        <div class="header-icon">
+            <a href="https://github.com/juanmfuentes" target="_blank" class="head">
+                <i class="fab fa-github icon fa-lg"></i>
+            </a>
+        </div>
+        <div class="header-icon">
+            <a href="https://www.linkedin.com/in/juan-manuel-fuentes-sarmiento-48675b2a0/" target="_blank">
+                <i class="fab fa-linkedin icon fa-lg"></i>
+            </a>
+        </div>
+        <div class="header-icon">
+            <a href="https://www.instagram.com/juanm_fuentes/" target="_blank">
+                <i class="fab fa-instagram icon fa-lg"></i>
+            </a>
+        </div>
+    </header>
+    <main class="main-container">
+        <div class="input-container">
+            <input type="text" class="city-input" placeholder="Search city" name="city-input">
+            <button class="search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2 class="country-txt">
+                        </h4>
+                </div>
+                <h3 class="current-date-txt regular-txt">
+                    </h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="assets/svg/wheater/thunderstorm.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt"></h1>
+                    <h3 class="condition-txt regular-txt"></h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <i class="fas fa-tint"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt"></h5>
+                    </div>
+                </div>
+                <div class="condition-item">
+                    <i class="fas fa-wind"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value-txt"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-item-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt"></h5>
+                    <img src="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt"></h5>
+                    <img src="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt"></h5>
+                    <img src="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt"></h5>
+                    <img src="" class="forecast-item-img">
+                    <h5 class="forecast-item-temp"></h5>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-city section-message">
+            <img src="assets/svg/general/city-search.svg" class="message-img" alt="Search city">
+            <div>
+                <h1>Search city</h1>
+                <h4 class="regular-txt message-txt">Know the weather conditions in the city of your choice.</h4>
+            </div>
+        </section>
+
+
+        <section class="not-found section-message" style="display: none;">
+            <img src="assets/svg/general/city-not-found.svg" class="message-img" alt="City not found">
+            <div>
+                <h1>City not found</h1>
+                <h4 class="regular-txt message-txt">The city you are looking for was not found.</h4>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-container regular-txt">
+        Juan Fuentes | Icons by <a href="https://www.amcharts.com/" target="_blank">amCharts</a>
+    </footer>
+</body>
+
+</html>
