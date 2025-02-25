@@ -12,4 +12,4 @@ Aplicación web para consultar el clima en tiempo real utilizando la API de Open
 2. La app consulta OpenWeather y muestra la información del clima.
 3. Diseño limpio y adaptado para cualquier dispositivo.
 
-## 📌 Demo en vivo: [Weather app](https://weatherappjuanmfuentes.netlify.app/) 🔗
+## 📌 Demo en vivo: [Weather App](https://weatherappjuanmfuentes.netlify.app/) 🔗
